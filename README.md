@@ -20,6 +20,6 @@ Click "Toggle Shape 1" to deactivate shape 1, and again to reactivate. Click "To
 
 # Details
 
-When you have multiple SpriteRenderer objects that share a material AND include Animator components that modify a material property, toggling those objects off and back on will cause the rendered textures to get mixed up. One or more of the SpriteRenderers will display the wrong sprite texture (although with the correct UVs). Destroying the Animator components fixes the issue.
+When you have multiple SpriteRenderer objects that share a material AND include Animator components that modify a material property, toggling those objects off and back on will cause the rendered textures to get mixed up. One or more of the SpriteRenderers will display the wrong sprite texture (although with the correct vertices/UVs). Destroying the Animator components fixes the issue.
 
 In this test project, I'm using a zero length animation that modifies the "_DummyProperty" material property. This property doesn't exist on the shader so it shouldn't have any effect.
