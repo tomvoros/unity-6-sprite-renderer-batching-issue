@@ -17,3 +17,9 @@ Play the scene.
 Click "Toggle Shape 1" to deactivate shape 1, and again to reactivate. Click "Toggle Shape 2" to deactivate shape 2, and again to reactive. Notice that shape 1 or 2 (inconsistent) will break.
 
 ![GIF 2025-02-19 1-55-45 PM](https://github.com/user-attachments/assets/cf08a4cb-8def-4b30-abda-afa663f0dec4)
+
+# Details
+
+When you have multiple SpriteRenderer objects that share a material AND include Animator components that modify a material property, toggling those objects off and back on will cause the rendered textures to get mixed up. One or more of the SpriteRenderers will display the wrong sprite texture (although with the correct UVs). Destroying the Animator components fixes the issue.
+
+In this test project, I'm using a zero length animation that modifies the "_DummyProperty" material property. This property doesn't exist on the shader so it shouldn't have any effect.
