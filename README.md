@@ -3,7 +3,7 @@
 Based on a test project by Dean Isseyegh here:
 https://github.com/DeanIsseyegh/unity-6-sprite-render-anim-issue
 
-This is a simple test project demonstrating a draw call batching issue with SpriteRenderers in Unity 6.
+This is a simple test project demonstrating (what appears to be) a draw call batching issue with SpriteRenderers in Unity 6.
 
 Forum post:
 https://discussions.unity.com/t/dynamic-draw-call-batching-seems-to-mix-up-sprites-between-spriterenderers-at-random/1602831
